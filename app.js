@@ -29,8 +29,8 @@ app.get('/get',async(req,res)=>{
    }
 })
 app.post('/data',async(req,res)=>{
-    const {param1,param2,param3} = req.body;
-   console.log(param1 + " " + param2 + " "  + param3);
+    const {username,email,password} = req.body;
+   console.log(username + " " + email + " "  + password);
 })
 app.listen(process.env.PORT || 3000,(req,res)=>{
 console.log('success')
