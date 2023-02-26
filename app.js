@@ -28,8 +28,9 @@ app.get('/get',async(req,res)=>{
     res.json("error");
    }
 })
-app.post('/post',async(req,res)=>{
-   console.log(req.body);
+app.post('/data',async(req,res)=>{
+    const {param1,param2,param3} = req.body;
+   console.log(param1 + " " + param2 + " "  + param3);
 })
 app.listen(process.env.PORT || 3000,(req,res)=>{
 console.log('success')
