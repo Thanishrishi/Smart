@@ -29,16 +29,7 @@ app.get('/get',async(req,res)=>{
    }
 })
 app.post('/post',async(req,res)=>{
-   const thanish  = registeredUsers();
-   try{
-
-       thanish.Username = "Thanishrishi";
-       thanish.Email = "Thanishrishi43@gmail.com";
-       thanish.Password = "Thanish824";
-       await thanish.save();
-   }catch(error){
-    res.json("error");
-   }
+   console.log(req.body);
 })
 app.listen(process.env.PORT || 3000,(req,res)=>{
 console.log('success')
