@@ -28,7 +28,7 @@ app.get('/get',async(req,res)=>{
     res.json("error");
    }
 })
-app.post('/data',async(req,res)=>{
+app.post('/data',(req,res)=>{
     const {username,email,password} = req.body;
    console.log(req.body);
 })
