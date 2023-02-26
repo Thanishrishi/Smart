@@ -30,7 +30,7 @@ app.get('/get',async(req,res)=>{
 })
 app.post('/data',async(req,res)=>{
     const {username,email,password} = req.body;
-   console.log(username + " " + email + " "  + password);
+   console.log(req.body);
 })
 app.listen(process.env.PORT || 3000,(req,res)=>{
 console.log('success')
