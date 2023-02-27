@@ -32,11 +32,28 @@ router.post('/signup',async(req,res)=>{
                 newuser.Email = email
                 newuser.Password = password
                 await newuser.save();
+                res.send("User added")
             }catch(error){
                 console.log('error');
             }
         }
     )
+})
+
+router.post('/login',(req,res)=>{
+    const {username , password} = req.body;
+    registeredUsers.findOne({Username : username})
+    .then((saveduser)=>{
+        if(saveduser){
+            if(saveduser.Password === password){
+                return res.send(1);
+            }
+            return res.status(422).send({error : "Invalid Credentials!!!"})
+        }
+        else{
+            console.log("not found");
+        }
+    })
 })
 
 
