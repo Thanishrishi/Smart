@@ -32,7 +32,7 @@ router.post('/signup',async(req,res)=>{
                 newuser.Email = email
                 newuser.Password = password
                 await newuser.save();
-                res.send("User added")
+                res.send("True")
             }catch(error){
                 console.log('error');
             }
