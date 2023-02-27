@@ -32,6 +32,7 @@ app.get('/get',async(req,res)=>{
 app.post('/data',async(req,res)=>{
     
    console.log(req.body)
+   res.send("success");
 })
 app.listen(process.env.PORT || 3000,(req,res)=>{
 console.log('success')
