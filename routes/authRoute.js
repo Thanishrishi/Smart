@@ -46,12 +46,12 @@ router.post('/login',(req,res)=>{
     .then((saveduser)=>{
         if(saveduser){
             if(saveduser.Password === password){
-                return res.send(1);
+                 res.send("True");
             }
-            return res.status(422).send({error : "Invalid Credentials!!!"})
+            res.send("Wrong Password")
         }
         else{
-            console.log("not found");
+            res.send("Such User Not found");
         }
     })
 })
