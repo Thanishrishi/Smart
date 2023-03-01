@@ -18,7 +18,7 @@ router.post('/transfer', (req, res) => {
                         if (saveduser) {
                             let reciepentamount = saveduser.Wallet;
                             console.log(reciepentamount)
-                            reciepentamount = amount + reciepentamount;
+                            reciepentamount = parseInt(amount)+ reciepentamount;
                             console.log(reciepentamount);
                             senderamount = senderamount - amount;
                             console.log(senderamount);
