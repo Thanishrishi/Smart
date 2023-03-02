@@ -6,6 +6,8 @@ const registeredUsers = require('./models/registeredUsers');
 const authRoute = require('./routes/authRoute');
 const SendDetials = require('./routes/SendDetials');
 const transfer = require('./routes/transfer')
+const addDatabase = require('./routes/addDatabase');
+const sendData = require('./routes/sendData')
 require('dotenv').config()
 mongoose.set('strictQuery', true);
 
@@ -18,6 +20,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(authRoute);
 app.use(SendDetials);
 app.use(transfer);
+app.use(addDatabase);
+app.use(sendData);
 app.get('/',(req,res)=>{
     res.json("success");
 })

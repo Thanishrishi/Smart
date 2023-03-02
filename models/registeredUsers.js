@@ -18,7 +18,12 @@ const userSchema = mongoose.Schema({
     Wallet : {
         type:Number,
         required : true
-    }
+    },
+    Cartamount :{
+        type:Number,
+        required : true
+    },
+   
 })
 
 module.exports = mongoose.model('User',userSchema);

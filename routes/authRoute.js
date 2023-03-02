@@ -32,6 +32,8 @@ router.post('/signup',async(req,res)=>{
                 newuser.Email = email
                 newuser.Password = password
                 newuser.Wallet = 0
+                newuser.Cartamount = 0
+                
                 await newuser.save();
                 res.send("True")
             }catch(error){
