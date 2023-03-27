@@ -10,6 +10,7 @@ router.post('/paymentgateway',async(req,res)=>{
     registeredUsers.findOne({Username : username})
     .then((saveduser)=>{
         let wallet = saveduser.Wallet;
+        console.log(wallet);
         if(wallet < amount){
             res.send("Insufficientfunds");
             return;
