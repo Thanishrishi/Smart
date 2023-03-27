@@ -7,8 +7,8 @@ require('dotenv').config();
 
 router.post('/paymentgateway',(req,res)=>{
 
-    console.log("Thanish")
-    res.send(req.body);
+    console.log(res.body);
+    res.send("successs")
 })
 
 module.exports = router;
