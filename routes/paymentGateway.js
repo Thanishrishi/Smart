@@ -7,7 +7,6 @@ require('dotenv').config();
 
 router.post('/paymentgateway',(req,res)=>{
 
-    console.log(req);
     res.send("success");
 })
 
