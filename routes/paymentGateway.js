@@ -5,9 +5,10 @@ const registeredUsers = require('../models/registeredUsers');
 require('dotenv').config();
 
 
-router.post('/paymentgateway',(req,res)=>{
+router.post('/paymentgateway',async(req,res)=>{
+    const{username , amount , billdata } = req.body;
+    console.log(billdata);
 
-    console.log(req.body);
     res.send("successs")
 })
 
