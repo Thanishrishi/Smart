@@ -16,7 +16,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
-                photo: "images.chickenrice",
+                photo: 42,
                 price: 60,
             },
             {
@@ -27,7 +27,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [3],
                 priceRating: "affordable",
-                photo: "images.coneicecream",
+                photo: 49,
                 price: 20,
             },
             {
@@ -38,7 +38,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [5],
                 priceRating: "affordable",
-                photo: "images.chickennuggets",
+                photo: 43,
                 price: 45,
             },
             {
@@ -49,7 +49,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [5],
                 priceRating: "affordable",
-                photo: "images.frenchfries",
+                photo: 47,
                 price: 30,
             },
             {
@@ -60,7 +60,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [3],
                 priceRating: "affordable",
-                photo: "images.cupice",
+                photo: 45,
                 price: 10,
             },
             {
@@ -71,7 +71,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [4],
                 priceRating: "affordable",
-                photo: "images.frenchfries",
+                photo: 48,
                 price: 30,
             },
             {
@@ -82,7 +82,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
-                photo: "images.eggpuff",
+                photo: 46,
                 price: 18,
             },
             {
@@ -93,7 +93,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
-                photo: "images.chickenpuffs",
+                photo: 44,
                 price: 22,
             },
             {
@@ -104,7 +104,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [4],
                 priceRating: "affordable",
-                photo: "images.soda",
+                photo: 55,
                 price: 12,
             },
             {
@@ -115,7 +115,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
-                photo: "images.vegpuffs",
+                photo: 53,
                 price: 15,
             },
             
@@ -128,7 +128,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [7],
                 priceRating: "affordable",
-                photo: "images.parotta",
+                photo: 51,
                 price: 15,
             },
             {
@@ -138,7 +138,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [6],
                 priceRating: "affordable",
-                photo: "images.mushroommasala",
+                photo: 54,
                 price: 20,
             },
             {
@@ -148,7 +148,7 @@ router.get("/adddata",(req,res)=>{
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
-                photo: "images.meals",
+                photo: 50,
                 price: 60,
             },
         ]
