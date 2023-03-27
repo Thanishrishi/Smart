@@ -8,6 +8,7 @@ const SendDetials = require('./routes/SendDetials');
 const transfer = require('./routes/transfer')
 const addDatabase = require('./routes/addDatabase');
 const sendData = require('./routes/sendData')
+const paymentGateway = require('./routes/paymentGateway');
 require('dotenv').config()
 mongoose.set('strictQuery', true);
 
@@ -22,6 +23,7 @@ app.use(SendDetials);
 app.use(transfer);
 app.use(addDatabase);
 app.use(sendData);
+app.use(paymentGateway);
 app.get('/',(req,res)=>{
     res.json("success");
 })
