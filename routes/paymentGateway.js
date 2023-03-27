@@ -7,7 +7,14 @@ require('dotenv').config();
 
 router.post('/paymentgateway',async(req,res)=>{
     const{username , amount , billdata } = req.body;
-    console.log(billdata);
+    registeredUsers.findOne({Username : username})
+    .then((saveduser)=>{
+        let wallet = saveduser.Wallet;
+        if(wallet < amount){
+            res.send("Insufficientfunds");
+            return;
+        }
+    })
 
     res.send("successs")
 })
