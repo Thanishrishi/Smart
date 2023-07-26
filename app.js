@@ -17,7 +17,9 @@ mongoose.connect(process.env.MONGO_URI,(error)=>{
     if(error) console.log(error);
     else console.log("Database Connected");
 })
-app.use(cors())
+app.use(cors({
+    origin : "*",
+}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 app.use(authRoute);
