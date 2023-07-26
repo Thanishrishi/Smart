@@ -4,7 +4,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 require('dotenv').config()
 const registeredUsers = require('../models/registeredUsers');
-
+const adminUsers = require('../models/adminUsers');
 
 router.post('/signup',async(req,res)=>{
     const{username , email, password} = req.body;
@@ -59,6 +59,22 @@ router.post('/login',(req,res)=>{
     })
 })
 
+router.post('/admin/login',(req,res)=>{
+    const {username,password} = req.body;
+    console.log(username + " " + password);
+    adminUsers.findOne({Username : username})
+    .then((saveduser)=>{
+        if(saveduser){
+            if(saveduser.Password === password){
+                res.send(saveduser.Role);
+            }
+            res.send("wrongpassword");
+        }else{
+            res.send("usernotfound");
+        }
+      
+    })
+})
 
 
 module.exports = router;
