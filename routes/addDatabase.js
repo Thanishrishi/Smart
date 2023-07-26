@@ -337,7 +337,9 @@ const admins =
     }
 
 router.get('/add/userAdmins',(req,res)=>{
-    adminUsers.insertMany({}).then(function(){
+    adminUsers.insertMany(
+        [{Username : "Varuns",Password:"SmartVarun",Role : "SuperAdmin",}]
+    ).then(function(){
         res.json("Inserted");
     }).catch(function(err){
         console.log(err);
