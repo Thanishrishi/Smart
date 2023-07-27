@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const itemData = require('../models/itemData');
 const adminUsers = require('../models/adminUsers')
+const itemCategories = require('../models/itemCategory');
 router.get("/adddata",(req,res)=>{
     itemData.insertMany({
         
@@ -341,6 +342,67 @@ router.get('/add/userAdmins',(req,res)=>{
         [{Username : "Varuns",Password:"SmartVarun",Role : "SuperAdmin",}]
     ).then(function(){
         res.json("Inserted");
+    }).catch(function(err){
+        console.log(err);
+    })
+})
+
+router.get('/add/itemcategories',(req,res)=>{
+    itemCategories.insertMany({
+        itemCategory : [
+          
+                {
+                    id: 1,
+                    name: "SNACKS",
+                    icon: 30,
+                },
+                {
+                    id: 2,
+                    name: "BAKES",
+                    icon: 29,
+                },
+                {
+                    id: 3,
+                    name: "SCOOPS",
+                    icon: 32,
+                },
+                {
+                    id: 4,
+                    name: "BEAVERAGES",
+                    icon: 5,
+        
+                },
+                {
+                    id: 5,
+                    name: "FASTFOOD",
+                    icon: 31,
+                },
+                {
+                    id: 6,
+                    name: "STARTERS",
+                    icon: 28,
+                },
+                {
+                    id: 7,
+                    name: "TIFFIN",
+                    icon: 26,
+                },
+                {
+                    id: 8,
+                    name: "RICE",
+                    icon: 19,
+                },
+                {
+                    id: 9,
+                    name: "S-MART",
+                    icon: 27,
+                },
+               
+        
+            
+        ]
+    }).then(function(){
+        console.log("InsertedCategoryData");
     }).catch(function(err){
         console.log(err);
     })
