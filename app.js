@@ -11,7 +11,7 @@ const addDatabase = require('./routes/addDatabase');
 const sendData = require('./routes/sendData')
 const paymentGateway = require('./routes/paymentGateway');
 const addCategory = require('./routes/addCategory');
-
+const addItem = require('./routes/addItem');
 require('dotenv').config()
 mongoose.set('strictQuery', true);
 
@@ -23,6 +23,7 @@ app.use(cors({
     origin : "*",
 }))
 app.use(express.json());
+app.use(addItem);
 app.use(express.urlencoded({ extended: false }))
 app.use(authRoute);
 app.use(SendDetials);

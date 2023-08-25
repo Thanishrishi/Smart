@@ -14,6 +14,7 @@ router.get("/adddata",(req,res)=>{
         
                 id : 1,
                 name: "Chicken Fried Rice",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -25,6 +26,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Cone",
+                quantity : 58,
                 rating: 4.8,
                 categories: [3],
                 priceRating: "affordable",
@@ -36,6 +38,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Chicken Nuggets",
+                quantity : 58,
                 rating: 4.8,
                 categories: [5],
                 priceRating: "affordable",
@@ -47,6 +50,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "French Fries",
+                quantity : 58,
                 rating: 4.8,
                 categories: [5],
                 priceRating: "affordable",
@@ -58,6 +62,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Cup ice",
+                quantity : 58,
                 rating: 4.8,
                 categories: [3],
                 priceRating: "affordable",
@@ -69,6 +74,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Fresh Juice",
+                quantity : 58,
                 rating: 4.8,
                 categories: [4],
                 priceRating: "affordable",
@@ -80,6 +86,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Egg puff",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -91,6 +98,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Chicken puff",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -102,6 +110,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Soda",
+                quantity : 58,
                 rating: 4.8,
                 categories: [4],
                 priceRating: "affordable",
@@ -113,6 +122,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Veg puff",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -126,6 +136,7 @@ router.get("/adddata",(req,res)=>{
                 
                 
                 name: "Parotta",
+                quantity : 58,
                 rating: 4.8,
                 categories: [7],
                 priceRating: "affordable",
@@ -136,6 +147,7 @@ router.get("/adddata",(req,res)=>{
                 
                 id:12,
                 name: "Mushroom Masala",
+                quantity : 58,
                 rating: 4.8,
                 categories: [6],
                 priceRating: "affordable",
@@ -146,6 +158,7 @@ router.get("/adddata",(req,res)=>{
                 
                 id:13,
                 name: "Meals",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -156,6 +169,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:14,
                 name: "Mushroom Puffs",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -166,6 +180,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:15,
                 name: "Sweet Parotta",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -176,6 +191,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:16,
                 name: "Sweet Bun",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -186,6 +202,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:17,
                 name: "Coconut Bun",
+                quantity : 58,
                 rating: 4.8,
                 categories: [2],
                 priceRating: "affordable",
@@ -196,6 +213,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:18,
                 name: "Kothu Parotta",
+                quantity : 58,
                 rating: 4.8,
                 categories: [7],
                 priceRating: "affordable",
@@ -206,6 +224,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:19,
                 name: "Chicken Noodles",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -216,6 +235,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:20,
                 name: "Egg Noodles",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -226,6 +246,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:20,
                 name: "Veg Noodles",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -236,6 +257,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:21,
                 name: "Egg Fried Rice",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -246,6 +268,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:22,
                 name: "Veg Fried Rice",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -256,6 +279,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:23,
                 name: "Chicken Briyani",
+                quantity : 58,
                 rating: 4.8,
                 categories: [8],
                 priceRating: "affordable",
@@ -267,6 +291,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:24,
                 name: "Samosa",
+                quantity : 58,
                 rating: 4.8,
                 categories: [1],
                 priceRating: "affordable",
@@ -277,6 +302,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:25,
                 name: "Roast",
+                quantity : 58,
                 rating: 4.8,
                 categories: [7],
                 priceRating: "affordable",
@@ -287,6 +313,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:26,
                 name: "Chappathi",
+                quantity : 58,
                 rating: 4.8,
                 categories: [7],
                 priceRating: "affordable",
@@ -297,6 +324,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:27,
                 name: "Panipuri",
+                quantity : 58,
                 rating: 4.8,
                 categories: [1],
                 priceRating: "affordable",
@@ -308,6 +336,7 @@ router.get("/adddata",(req,res)=>{
                
                 id:28,
                 name: "Bhelpuri",
+                quantity : 58,
                 rating: 4.8,
                 categories: [1],
                 priceRating: "affordable",
