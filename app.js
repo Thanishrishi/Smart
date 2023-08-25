@@ -10,6 +10,8 @@ const transfer = require('./routes/transfer')
 const addDatabase = require('./routes/addDatabase');
 const sendData = require('./routes/sendData')
 const paymentGateway = require('./routes/paymentGateway');
+const addCategory = require('./routes/addCategory');
+
 require('dotenv').config()
 mongoose.set('strictQuery', true);
 
@@ -28,6 +30,7 @@ app.use(transfer);
 app.use(addDatabase);
 app.use(sendData);
 app.use(paymentGateway);
+app.use(addCategory);
 app.get('/',(req,res)=>{
     res.json("success");
 })
